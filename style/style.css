@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:wght@400");
+:root {
+  --primary-color: hsl(231, 69%, 60%);
+  --secundary-color: hsl(0, 94%, 66%);
+  --darkOne: hsl(229, 8%, 60%);
+  --darkTwo: hsl(229, 31%, 21%);
+}
+
+* {
+  box-sizing: border-box;
+}
+#logo{
+   margin-left: 200px;
+}
+
+p {
+  color: var(--darkOne);
+}
+h3 {
+  color: var(--darkTwo);
+}
+
+body {
+  font-family: "Rubik", "sans-serif";
+  font-size: 18px;
+}
+
+#firstBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 650px) {
+  .navbar-nav {
+    height: 100vh;
+    text-align: center;
+    opacity: 2;
+  }
+  #firstBlock {
+    flex-direction: column;
+  }
+  #firstImgBlock {
+    order: 1;
+  }
+  #textBlock {
+    order: 2;
+  }
+
+  #firstImage {
+    width: 100%;
+  }
+  #logo{
+    margin-left: 0px;
+ }
+ #navbarText{
+   margin-right: 0px;
+ }
+ #details summary::before {
+   right: 2px;
+ }
+}
+@media (min-width: 651px) {
+  #firstImage {
+    width: 100%;
+    margin-left: 50px;
+  }
+  #textBlock {
+    order: 1;
+  }
+  #firstImgBlock {
+    order: 2;
+  }
+  #navbarText{
+    margin-right: 200px;
+  }
+}
+.nav-item{
+  padding: 1px;
+  color: #000;
+}
+.nav-item:hover{
+  color: var(--secundary-color);
+
+}
+#socialBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  background-color: rgba(7, 7, 255, 0);
+}
+#download {
+  margin-left: 9%;
+  margin-right: 9%;
+}
+.card {
+  width: 50px;
+  padding-right: 10px;
+  margin-right: 10px;
+  contain: content;
+}
+.card-img-top {
+  padding: 50px;
+  padding-bottom: 10px;
+}
+#preFooter {
+  padding-top: 50px;
+  height: 300px;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+.navbar {
+  background-color: var(--darkOne);
+}
+#opcion1,
+#opcion2,
+#opcion3 {
+  height: 700px;
+}
+/* 
+#firstImage {
+  filter: drop-shadow(150px 140px 0px hsl(231, 69%, 60%));
+  border-radius: 0% 0% 0% 59% / 0% 0% 0% 59%;  
+} */
+/* 
+
+#rectangulo {
+  width: 500px; 
+  height: 330px; 
+   border: 3px solid #555; 
+  margin-top: 36%;
+  margin-left: 25%;
+  background: var(--primary-color);
+  border-radius: 0% 0% 0% 31% / 0% 0% 0% 31%;
+  z-index: 0;
+ 
+}
+ */
+#firstBlock {
+  margin-top: 60px;
+  height: 600px;
+}
+#textBlock {
+  margin-left: 10%;
+}
+#moreInfoButton{
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: white;
+  padding: 15px;
+}
+#moreInfoButton:hover{
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 15px;
+}
+#primaryButton {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: white;
+  padding: 15px;
+}
+#primaryButton:hover{
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  cursor:pointer;
+}
+#secondaryButton {
+  padding: 15px;
+  margin-right: 15px;
+  border: 2px solid white;
+}
+#secondaryButton:hover {
+  border: 2px solid black;
+}
+#button1 { 
+ border-bottom: 1px solid red;
+}
+#button1:hover { 
+color: var(--secundary-color);
+}
+#button2 { 
+ border-bottom: 1px solid grey;
+}
+#button2:hover { 
+ color: var(--secundary-color);
+}
+#button3 { 
+ border-bottom: 1px solid grey;
+}
+#button3:hover { 
+ color: var(--secundary-color);
+}
+details {
+  background-color: #ffffff; /* color de fondo cuando no está desplegado */
+}
+
+details[open] {
+  background: #ffffff; /* color de fondo cuando está desplegado */
+}
+details summary {
+  font-weight: 400; /* peso de la tipografía cuando  no está desplegado */
+  list-style: none; /* ocultamos la flecha */
+  cursor: pointer; /* cambia el cursor del puntero */
+}
+
+details[open] summary::before {
+  content:url(/edited/arrow-up.svg);
+  
+  top: 10x;
+  
+}
+details[open] summary {
+  font-weight: 500; /* peso de la tipografía cuando está desplegado */
+}
+details {
+  position: relative;
+  border-top: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+}
+details:hover {
+  color: var(--secundary-color);
+}
+#browser{
+  background-color: var(--primary-color);
+  color: white;
+}
+#browser:hover{
+  background-color: white;
+  color : var(--primary-color);
+  border: 1px solid var(--primary-color)
+}
+
+details summary::before {
+  margin-right: 30px;
+ position: absolute;
+  top: 10px;
+  right: 10px;
+  content:url(/images/icon-arrow.svg);
+    
+}
+#firefox{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+
+#faq{
+  
+ 
+ 
+  text-align:start;
+  margin-right: 20%;
+  
+}

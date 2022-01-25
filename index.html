@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- muestra el sitio correctamente según el dispositivo del usuario -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style/style.css">
+  <title>Reto 1 | Bookmark landing page</title>
+
+  <!-- Siéntase libre de eliminar estos estilos o personalizarlos en su propia hoja de estilo.👍 -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid ml-5 pl-5 " id="navBack">
+
+
+      <a class="navbar-brand" href="#">
+        <img id="logo" src="images/logo-bookmark.svg">
+      </a>
+
+      <button class="navbar-toggler z-index-2" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end pd-5" id="navbarText">
+
+        <ul class="navbar-nav z-index-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-danger nav-item" href="#">Login</button> </li>
+
+          <div id="socialBtn">
+            <img src="/images/icon-facebook.svg">
+            <img src="/images/icon-twitter.svg">
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div id="firstBlock">
+      <div id="textBlock">
+        <br><br>
+        <h1 class="lh-sm text-justify fw-bold">
+          A Simple Bookmark Manager
+        </h1>
+        <p class="lh-base text-justify pt-2">
+          A clean and simple interface to organize your favourite<br> websites. Open a new
+          browser tab and see your sites load<br> instantly. Try it for free.
+        </p>
+        <div class="pt-2 " id="socialBtn">
+          <button id="primaryButton" class="shadow p-3 btn"> Get it on Chrome</button>
+          <button id="secondaryButton" class="shadow p-3 btn btn-light">Get it on Firefox</button>
+        </div>
+      </div>
+      <div id="firstImgBlock">
+        <img id="firstImage" src="/edited/Group 1.svg">
+      </div>
+
+
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="text-center mt-5">
+      <h3>Features</h3>
+      <p>
+        Our aim is to make it quick and easy for you to access your<br> favourite websites.
+        Your bookmarks sync between your devices<br> so you can access them on the go.
+      </p>
+      <div class="row justify-content-center" id="botones">
+        <button class="col-md-2 btn" id="button1" onclick="cambioPestana(1)">Simple Bookmarking</button>
+        <button class="col-md-2 btn" id="button2" onclick="cambioPestana(2)">Speedy Searching</button>
+        <button class="col-md-2 btn" id="button3" onclick="cambioPestana(3)">Easy Sharing</button>
+      </div>
+    </div>
+
+    <div class="row mt-5" id="option1">
+      <div class="col-md-7" id=image>
+        <img class="img-fluid" src="/edited/Group 2.svg">
+      </div>
+      <div class="col-md-5">
+        <h3> Bookmark in one click </h3>
+        <p> Organize your bookmarks however you like. Our<br> simple drag-and-drop interface
+          gives you complete<br> control over how you manage your favourite sites. </p>
+        <button class="btn btn-primary"> More Info </button>
+      </div>
+    </div>
+
+    <div class="row mt-5" style="display: none;" id="option2">
+      <div class="col-md-6" id=image>
+        <img class="img-fluid" src="/edited/Features2Group 3.svg">
+      </div>
+      <div class="col-md-6">
+        <h3> Intelligent search </h3>
+        <p> Our powerful search feature will help you find<br> saved sites in no time at all.
+          No need to trawl<br> through all of your bookmarks. </p>
+        <button class="btn btn-primary"> More Info </button>
+      </div>
+    </div>
+
+    <div class="row mt-5" style="display: none;" id="option3">
+      <div class="col-md-6" id=image>
+        <img class="img-fluid" src="/edited/Features3Group 3.svg">
+      </div>
+      <div class="col-md-6">
+        <h3>Share your bookmarks</h3>
+        <p>Easily share your bookmarks and collections with others. Create a shareable
+          link that you can send at the click of a button.</p>
+        <button class="btn btn-primary">
+          More Info
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mb-5">
+    <div id="download" class="text-center mt-5">
+      <h3>
+        Download the extension
+      </h3>
+      <p>
+        We’ve got more browsers in the pipeline. Please do let us know if<br> you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+
+      <div class="row justify-content-center mt-5 mb-5 p-auto" id="download">
+
+        <div class="shadow card col-md-3 mb-5">
+          <img class="card-img-top img-fluid" src="images/logo-chrome.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Add to Chrome</h5>
+            <p class="card-text">Minimum version 62.</p>
+            <img class="dots img-resposive" src="/images/bg-dots.svg">
+            <a href="#" class="btn" id="browser">Add & Install Extension</a>
+          </div>
+        </div>
+        <div class="shadow card col-md-3 mt-2 mb-4" id="firefox">
+
+          <img class="card-img-top img-fluid" src="images/logo-firefox.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Add to Firefox</h5>
+            <p class="card-text">Minimum version 55.</p>
+            <img class="dots img-resposive" src="/images/bg-dots.svg">
+            <a href="#" class="btn "id="browser" >Add & Install Extension</a>
+          </div>
+        </div>
+        <div class="shadow card col-md-3 mt-4 mb-2">
+          <img class="card-img-top  img-fluid" src="images/logo-opera.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Add to Opera</h5>
+            <p class="card-text">Minimum version 46.</p>
+            <img class="dots img-resposive" src="/images/bg-dots.svg">
+            <a href="#" class="btn " id="browser">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto container" id="faq">
+    <h1>Frequently Asked Questions</h1>
+    <p>
+      Here are some of our FAQs. If you have any other questions you’d like
+      answered please feel free to email us.
+    </p>
+
+    <details>
+      <!-- Question 1 -->
+      <summary>What is Bookmark?</summary>
+      <!-- Answer 1 -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+      </p>
+    </details>
+
+
+
+    <details>
+      <summary>
+        <!-- Question 2 -->
+        How can I request a new browser?
+      </summary>
+      <p>
+        <!-- Answer 2 -->
+        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+
+      </p>
+    </details>
+
+
+
+
+
+    <!-- Question 3 -->
+    <details>
+      <summary>
+        Is there a mobile app?
+      </summary>
+      <p>
+        <!-- Answer 3 -->
+        Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+        urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+        sollicitudin ex et ultricies bibendum.
+      </p>
+    </details>
+
+
+
+
+    <!-- Question 4 -->
+    <details>
+      <summary>
+        What about other Chromium browsers?
+      </summary>
+      <!-- Answer 4 -->
+      <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+        vitae neque eget nisl gravida pellentesque non ut velit.</p>
+    </details>
+    <div   class="text-center">
+    <button class="btn mt-5" id="moreInfoButton">
+      More Info
+    </button>
+  </div>
+  </div>
+  <br><br>
+  <div class="text-center" id="preFooter">
+    <p style="color: white;">35,000+ already joined</p>
+    <h3 style="color: white;">Stay up-to-date with what<br> we’re doing</h3>
+    <br>
+    <input class="h-20" placeholder="Enter email:" type="email">
+    <button class="btn btn-danger">Contact Us</button>
+  </div>
+
+  <div id="antefooter">
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+      <div class="container-fluid">
+        <div class="pd-5 justify-content-center" id="navbarText">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <div id="socialBtn">
+              <img src="/images/icon-facebook.svg">
+              <img src="/images/icon-twitter.svg">
+            </div>
+          </ul>
+        </div>
+      </div>
+  </div>
+  </nav>
+  <footer>
+    Coded by <a href="#">David Charif</a>.
+    </p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="/script/script.js"></script>
+</body>
+
+</html>
