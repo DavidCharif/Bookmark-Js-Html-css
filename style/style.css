@@ -210,7 +210,7 @@ details summary {
 }
 
 details[open] summary::before {
-  content:url(edited/arrow-up.svg);
+  content:url(../edited/arrow-up.svg);
   
   top: 10x;
   
