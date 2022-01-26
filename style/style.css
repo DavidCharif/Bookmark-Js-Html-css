@@ -9,8 +9,8 @@
 * {
   box-sizing: border-box;
 }
-#logo{
-   margin-left: 200px;
+#logo {
+  margin-left: 200px;
 }
 
 p {
@@ -32,7 +32,7 @@ body {
 }
 
 @media (max-width: 650px) {
-  .navbar-nav {
+  .containMenu {
     height: 100vh;
     text-align: center;
     opacity: 2;
@@ -50,16 +50,23 @@ body {
   #firstImage {
     width: 100%;
   }
-  #logo{
+  #logo {
     margin-left: 0px;
- }
- #navbarText{
-   margin-right: 0px;
- }
- #details summary::before {
-   right: 2px;
- }
+  }
+  #navbarText {
+    margin-right: 0px;
+  }
+  #details summary::before {
+    right: 2px;
+  }
+  .moreInfo {
+    display: none !important;
+  }
+  #downloadContainer {
+    margin-top: 100px !important;
+  }
 }
+
 @media (min-width: 651px) {
   #firstImage {
     width: 100%;
@@ -71,19 +78,22 @@ body {
   #firstImgBlock {
     order: 2;
   }
-  #navbarText{
+  #navbarText {
     margin-right: 200px;
   }
 }
-.nav-item{
+.nav-item {
   padding: 1px;
   color: #000;
 }
-.nav-item:hover{
-  color: var(--secundary-color);
-
+.nav-item:hover {
+  color: var(--secundary-color) !important;
 }
-#socialBtn{
+.nav-link:hover {
+  color: var(--secundary-color) !important;
+}
+
+#socialBtn {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -146,13 +156,13 @@ body {
 #textBlock {
   margin-left: 10%;
 }
-#moreInfoButton{
+#moreInfoButton {
   background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
   color: white;
   padding: 15px;
 }
-#moreInfoButton:hover{
+#moreInfoButton:hover {
   background-color: white;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
@@ -164,11 +174,11 @@ body {
   color: white;
   padding: 15px;
 }
-#primaryButton:hover{
+#primaryButton:hover {
   background-color: white;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
-  cursor:pointer;
+  cursor: pointer;
 }
 #secondaryButton {
   padding: 15px;
@@ -178,23 +188,23 @@ body {
 #secondaryButton:hover {
   border: 2px solid black;
 }
-#button1 { 
- border-bottom: 1px solid red;
+#button1 {
+  border-bottom: 1px solid red;
 }
-#button1:hover { 
-color: var(--secundary-color);
+#button1:hover {
+  color: var(--secundary-color);
 }
-#button2 { 
- border-bottom: 1px solid grey;
+#button2 {
+  border-bottom: 1px solid grey;
 }
-#button2:hover { 
- color: var(--secundary-color);
+#button2:hover {
+  color: var(--secundary-color);
 }
-#button3 { 
- border-bottom: 1px solid grey;
+#button3 {
+  border-bottom: 1px solid grey;
 }
-#button3:hover { 
- color: var(--secundary-color);
+#button3:hover {
+  color: var(--secundary-color);
 }
 details {
   background-color: #ffffff; /* color de fondo cuando no está desplegado */
@@ -210,10 +220,9 @@ details summary {
 }
 
 details[open] summary::before {
-  content:url(../edited/arrow-up.svg);
-  
+  content: url(../edited/arrow-up.svg);
+
   top: 10x;
-  
 }
 details[open] summary {
   font-weight: 500; /* peso de la tipografía cuando está desplegado */
@@ -227,35 +236,73 @@ details {
 details:hover {
   color: var(--secundary-color);
 }
-#browser{
+#browser {
   background-color: var(--primary-color);
   color: white;
 }
-#browser:hover{
+#browser:hover {
   background-color: white;
-  color : var(--primary-color);
-  border: 1px solid var(--primary-color)
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 details summary::before {
   margin-right: 30px;
- position: absolute;
+  position: absolute;
   top: 10px;
   right: 10px;
-  content:url(../images/icon-arrow.svg);
-    
+  content: url(../images/icon-arrow.svg);
 }
-#firefox{
+#mailInput {
+  border: 10px solid transparent;
+  
+}
+#contenedorError{
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  border-radius: 5px;
+}
+
+#submitButton {
+  margin-top: 7px;
+  padding-bottom: 0;
+  padding: 0%;
+}
+
+#textoError{
+  font-size: 10px;
+  text-align: start;
+  padding-left: 10px;
+  color: white;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+
+
+#firefox {
   margin-left: 80px;
   margin-right: 80px;
 }
 
-
-#faq{
-  
- 
- 
-  text-align:start;
+#faq {
+  text-align: start;
   margin-right: 20%;
+}
+
+#footer {
+  background-color: var(--darkTwo);
+}
+
+#footer > div > div > ul > li > a {
+  color: #ffffff ;
+  padding: 20px;
   
+}
+.socialBoton{
+  width: 50px !important;
+  padding: 20px;
+}
+#logoFooter {
+  padding: 20px;
 }

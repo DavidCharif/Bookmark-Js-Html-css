@@ -37,3 +37,41 @@ const cambioPestana = (pos) => {
             break;
     }
 }
+
+// Input correo
+
+const verificarCorreo = () => {
+    let mailBox = document.getElementById("mailInput");
+    let value = mailBox.value;
+    let texto = document.getElementById("textoError");
+    let contenedor = document.getElementById("contenedorError");
+    
+    
+     if(value.includes("@") && value.includes(".") && !value.includes(" ")){
+        mailBox.style.borderBottom = "5px solid green"
+        mailBox.style.borderTop = "1px solid green"
+        mailBox.style.borderLeft = "1px solid green"
+        mailBox.style.borderRight = "1px solid green"
+        texto.innerText = "Correo correcto"
+        contenedor.style.background = "green"
+        mailBox.classList.add('is-valid')
+        mailBox.classList.remove("is-invalid")
+    }  else {
+        mailBox.style.borderBottom = "1px solid var(--secundary-color)"
+        contenedor.style.background = "var(--secundary-color)"
+        mailBox.style.borderTop = "1px solid var(--secundary-color)"
+        mailBox.style.borderLeft = "1px solid var(--secundary-color)"
+        mailBox.style.borderRight = "1px solid var(--secundary-color)"
+        texto.innerText = "Whoops, make sure it's an email"
+        mailBox.classList.add('is-invalid')
+        mailBox.classList.remove("is-valid")
+      
+        /* let p = document.createElement("p");
+        let div = document.createElement("div");
+        p.textContent = "Whoops, make sure it's an email"
+        div.appendChild(p)
+        mailBox.appendChild(div); */
+      
+    }
+    console.log(value.includes("@"));
+}
