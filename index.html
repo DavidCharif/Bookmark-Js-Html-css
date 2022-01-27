@@ -11,14 +11,16 @@
   <title>Reto 1 | Bookmark landing page</title>
 
   <!-- Siéntase libre de eliminar estos estilos o personalizarlos en su propia hoja de estilo.👍 -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <nav class="navbar navbar-expand-lg navbar-light  " id="header">
     <div class="container-fluid ml-5 pl-5 " id="navBack">
 
 
@@ -27,7 +29,7 @@
       </a>
 
       <button class="navbar-toggler z-index-2" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" onclick="menu()" id="botonMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -40,18 +42,27 @@
           <li class="nav-item">
             <a class="nav-link" href="#">PRICING</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="lastSRC">
             <a class="nav-link" href="#">CONTACT</a>
           </li>
-          <li class="nav-item">
-            <button class="btn btn-danger nav-item" href="#">LOGIN</button> </li>
 
-          <div id="socialBtn">
-            <img src="images/icon-facebook.svg">
-            <img src="images/icon-twitter.svg">
+          <button class="btn btn-danger nav-item" id="loginButton" href="#">LOGIN</button>
+
+          <div class="row justify-content-center mt-5" id="socialBtn">
+            <div class="col">
+              <img src="images/icon-facebook.svg">
+            </div>
+            <div class="col">
+              <img src="images/icon-twitter.svg">
+            </div>
           </div>
-        </ul>
+
+
       </div>
+
+    </div>
+    </ul>
+    </div>
     </div>
 
     </div>
@@ -68,12 +79,12 @@
           browser tab and see your sites load<br> instantly. Try it for free.
         </p>
         <div class="pt-2 justify-content-center" id="socialBtn">
-         
-            <button id="primaryButton" class=" shadow p-3 btn"> Get it on Chrome</button>
-          
-          
-            <button id="secondaryButton" class=" shadow p-3 btn btn-light">Get it on Firefox</button>
-          
+
+          <button id="primaryButton" class=" shadow p-3 btn"> Get it on Chrome</button>
+
+
+          <button id="secondaryButton" class=" shadow p-3 btn btn-light">Get it on Firefox</button>
+
         </div>
       </div>
       <div id="firstImgBlock">
@@ -256,10 +267,12 @@
     <div class="row d-flex justify-content-center">
       <div id="contenedorError" class="col-6">
         <form>
-        <input type="text" id="mailInput" class="form-control" placeholder="Enter email:" type="email"><p id="textoError"></p>
-      </form>
+          <input type="text" id="mailInput" class="form-control" placeholder="Enter email:" type="email">
+          <p id="textoError"></p>
+        </form>
       </div>
-      <div class="col-4" id="submitButton"> <button onclick="verificarCorreo()" class="btn btn-danger">Contact Us</button></div>
+      <div class="col-4" id="submitButton"> <button onclick="verificarCorreo()" class="btn btn-danger">Contact
+          Us</button></div>
     </div>
 
 
