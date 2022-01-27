@@ -89,7 +89,7 @@ const menu = () => {
     button.classList.add("btn-block");
     button.style.backgroundColor = "none";
     button.style.border = "1px solid white";
-    logo.src = "images/logo-bookmarkWhite.svg";
+    logo.src = "images/logo-bookmarkWhiteWhite.svg";
   } else if (switcher = 1) {  
     
     logo.src = "images/logo-bookmark.svg";
