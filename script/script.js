@@ -97,7 +97,7 @@ const menu = () => {
     button.classList.remove("btn-outline-light");
     button.classList.remove("btn-block");
     button.classList.remove("btn-outline-light")
-    button.classList.remove("btn-block")
+    button.classList.remove("btn-lg");
     button.classList.add("btn-danger")
     switcher = 0; 
     }
